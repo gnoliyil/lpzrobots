@@ -26,6 +26,7 @@
 #define LPZHELPHANDLER_H
 
 #include <osgViewer/ViewerEventHandlers>
+#include <osg/BoundingBox>
 
 namespace lpzrobots {
 

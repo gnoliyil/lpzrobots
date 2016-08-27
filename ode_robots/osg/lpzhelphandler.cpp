@@ -186,7 +186,8 @@ namespace lpzrobots{
         label->setPosition(pos);
         label->setText(_applicationUsage->getDescription());
 
-        pos.x() = label->getBound().xMax();
+	osg::BoundingBox bound = label->getBoundingBox(); 
+        pos.x() = bound.xMax();
         pos.y() -= characterSize*2.0f;
       }
 
